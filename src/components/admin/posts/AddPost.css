@@ -1,0 +1,116 @@
+.containeraddpost {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+#root{
+    height: 100% !important;
+}
+body{
+    background-color: #ecf0f3;
+    margin: 0px;
+    padding: 0px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.boxaddpost{
+    margin: auto;
+    box-sizing: border-box;
+    margin-top: 100px;
+    padding: 80px 40px;
+    width:490px;
+    border-radius: 35px;
+    background-color: #ecf0f3;
+    box-shadow: -8px -8px 8px #feffff, 8px 8px 8px #161b1d2f;
+}
+.boxaddpost label{
+    font-size: 16px;
+    font-weight: 500;
+    color:#858686;
+}
+.naslovaddpost{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -12%;
+    margin-bottom: 12%;
+}
+.boxaddpost .input-box-addpost{
+    width:100%;
+    height: 45px;
+    padding-left: 20px;
+    border: none;
+    color: #494a4a;;
+    background-color: #ecf0f3;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: inset 5px 5px 5px #cbced1,
+        inset -5px -5px 5px #ffffff;
+        font-size: large;
+}
+#grupa{
+    margin-top: 8%;
+    margin-bottom: 5%;
+}
+.boxaddpost .input-box-txt{
+    width:100%;
+    height: 45px;
+    padding-left: 20px;
+    padding-top: 10px;
+    border: none;
+    color: #494a4a;;
+    background-color: #ecf0f3;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: inset 5px 5px 5px #cbced1,
+        inset -5px -5px 5px #ffffff;
+        font-size: large;
+    max-width: 100%;
+    min-width: 100%;
+      
+}
+
+.boxaddpost .input-box-txt .input-box-addpost::placeholder{
+    color:#9ea0a0;
+}
+
+.btn-addpost{
+    width:100%;
+    height: 38px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background-color: #15a362;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    cursor: pointer;
+    box-shadow: -5px -5px 8px #d8e2e6, 5px 5px 10px #2c313378;
+    transition: 0.8s;
+    margin-top: 5%;
+}
+.btn-addpost:hover{
+    background-color: #15a362;
+    color: white !important;
+}
+form{
+    width: 100%;
+}
+*::-webkit-scrollbar {
+    width: 5px;
+}
+*::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+*::-webkit-scrollbar-thumb {
+    background: #15a362;
+}
+*::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+* {
+    scrollbar-color: #15a362 #f5f6fe !important;
+    scrollbar-width: thin !important;
+}

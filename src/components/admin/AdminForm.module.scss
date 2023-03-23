@@ -1,0 +1,503 @@
+
+@import "./mixins";
+@import "./Variables.scss";
+
+* {
+	&::-webkit-scrollbar {
+		width: 5px;
+	}
+	&::-webkit-scrollbar-track {
+		background: $bgcolor10;
+	}
+	&::-webkit-scrollbar-thumb {
+		background: $bgcolor6;
+		&:hover {
+			background: $bgcolor11;
+		}
+	}
+	scrollbar-color: $bgcolor6 $bgcolor12 !important;
+	scrollbar-width: thin !important;
+}
+.content {
+	display: flex;
+	justify-content: center;
+	margin-left: 300px;
+	@include desktop(1200px) {
+		margin-left: 0px !important;	
+	}
+}
+.forget {
+	width: 49%;
+	.fg {
+		a {
+			text-decoration: none;
+			font-size: 13px;
+			color: $color6;
+			line-height: 24px;
+		}
+		display: inline-block;
+		margin-left: 58%;
+		font-size: 12px;
+		&:hover {
+			text-decoration: underline;
+			text-decoration-color: $color8;
+		}
+	}
+	.checkbox-label {
+		display: block;
+		position: relative;
+		cursor: pointer;
+		font-size: 22px;
+		line-height: 22px;
+		input {
+			position: absolute;
+			opacity: 0;
+			cursor: pointer;
+			width: 140%;
+		}
+	}
+}
+.checkbox-label {
+	.checkbox-custom {
+		position: absolute;
+		top: 5px;
+		left: 10px;
+		height: 19px;
+		width: 20px;
+		background-color: $bgcolor2;
+		border-radius: 5px;
+		border: none;
+		@include boxShadown(inset,3px,3px,3px,$shadownColor1,$whiteColor);
+		&::after {
+			position: absolute;
+			content: "";
+			left: 10px;
+			top: 10px;
+			height: 0px;
+			width: 0px;
+			border-radius: 5px;
+			border: solid $color7;
+			border-width: 0 3px 3px 0;
+			-webkit-transform: rotate(0deg) scale(0);
+			-ms-transform: rotate(0deg) scale(0);
+			transform: rotate(0deg) scale(0);
+			opacity: 1;
+			transition: all 0.3s ease-out;
+		}
+	}
+	input {
+		&:checked {
+			~ {
+				.checkbox-custom {
+					background-color: $bgcolor2;
+					border-radius: 5px;
+					-webkit-transform: rotate(0deg) scale(1);
+					-ms-transform: rotate(0deg) scale(1);
+					transform: rotate(0deg) scale(1);
+					opacity: 1;
+					border: none;
+					@include boxShadown(solid, -4px, -4px, 4px, $shadownColor2, $shadownColor3);
+					&::after {
+						-webkit-transform: rotate(45deg) scale(1);
+						-ms-transform: rotate(45deg) scale(1);
+						transform: rotate(45deg) scale(1);
+						opacity: 1;
+						left: 7px;
+						top: 3px;
+						width: 4px;
+						height: 8px;
+						border: solid $color7;
+						border-width: 0 2px 2px 0;
+						background-color: $bgcolor3;
+						border-radius: 0;
+					}
+				}
+			}
+		}
+	}
+}
+#pretraga {
+	&:not(:valid) {
+		~ {
+			.close-icon {
+				display: none;
+			}
+		}
+	}
+}
+.updateBtn {
+	width: 35%;
+	position: relative;
+    font: {
+        size: 16px;
+        weight: 500;
+    }
+	cursor: pointer;
+	right: 10px;
+	background: $bgcolor13;
+	border: none;
+	border-radius: .5rem;
+	color: $color1;
+	text-align: center;
+	outline: none;
+	cursor: pointer;
+	transition: .2s ease-in-out;
+	box-shadow: -6px -6px 14px $shadownColor4, -6px -6px 10px $shadownColor5, 6px 6px 8px $shadownColor6, 6px 6px 10px $shadownColor7;
+	&:hover {
+		background-color: $bgcolor1;
+	}
+}
+.editicon {
+	width: 23px;
+	height: 23px;
+}
+.btns {
+	width: 49%;
+	display: flex;
+	justify-content: right;
+	align-items: baseline;
+}
+.newBtn {
+	width: 100%;
+	display: flex;
+	justify-content: right;
+	align-items: baseline;
+}
+.boxhome {
+	margin: auto;
+	box-sizing: border-box;
+	margin-top: 100px;
+	padding: 80px 40px;
+	width: 490px;
+	min-width: 455px;
+	border-radius: 35px;
+	background-color: $bgcolor2;
+	@include boxShadown(solid, -8px, -8px, 8px, $shadownColor2, $shadownColor3);
+	label {
+		font-size: 16px;
+		font-weight: 500;
+		color: $color2;
+	}
+    .input-search {
+		width: 100%;
+		height: 45px;
+		padding-left: 20px;
+		border: none;
+		color: $color4;
+		background-color: $bgcolor2;
+		outline: none;
+		@include boxShadown(inset,5px,5px,5px,$shadownColor1, $whiteColor);
+		font-size: large;
+	}
+	.input-box {
+        @extend .input-search;
+		border-radius: 20px;
+		&::placeholder {
+			color: $color5;
+		}
+	}
+    .input-box-group {
+        @extend .input-search;
+		border-radius: 20px;
+	}
+}
+.close-icon {
+	position: absolute;
+	padding: 30px 10px 15px 15px;
+	border: 1px solid $bgcolor3;
+	background-color: $bgcolor3;
+	display: inline-block;
+	vertical-align: middle;
+	outline: 0;
+	cursor: pointer;
+	position: absolute;
+	padding: 30px 10px 15px 15px;
+	border: 1px solid $bgcolor3;
+	background-color: $bgcolor3;
+	display: inline-block;
+	vertical-align: middle;
+	outline: 0;
+	cursor: pointer;
+	&:focus {
+		outline: none;
+		outline: none !important;
+		border: none !important;
+		-webkit-box-shadow: none !important;
+		box-shadow: none !important;
+	}
+	&::after {
+		content: "X";
+		display: block;
+		width: 23px;
+		height: 24px;
+		position: absolute;
+		background-color: $bgcolor4;
+		z-index: 1;
+		right: 35px;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		padding: 2px;
+		border-radius: 50%;
+		text-align: center;
+		color: $color3;
+		font-weight: bolder;
+		font-size: 14px;
+		cursor: pointer;
+		content: "X";
+		display: block;
+		width: 23px;
+		height: 23px;
+		position: absolute;
+		background-color: $bgcolor4;
+		z-index: 1;
+		right: 35px;
+		bottom: 0;
+		top: 0px;
+		margin: auto;
+		padding: 2px;
+		border-radius: 50%;
+		text-align: center;
+		color: $color3;
+		font-weight: bold;
+		font-size: 14px;
+		cursor: pointer;
+	}
+}
+.close-icon-hide {
+	display: none;
+}
+
+.clearinput {
+	position: absolute;
+	padding: 30px 10px 15px 15px;
+	border: 1px solid $bgcolor3;
+	background-color: $bgcolor3;
+	display: inline-block;
+	vertical-align: middle;
+	outline: 0;
+	cursor: pointer;
+	&:focus {
+		outline: none !important;
+		border: none !important;
+		-webkit-box-shadow: none !important;
+		box-shadow: none !important;
+	}
+	&::after {
+		content: "X";
+		display: block;
+		width: 23px;
+		height: 23px;
+		position: absolute;
+		background-color: $bgcolor4;
+		z-index: 1;
+		right: 35px;
+		bottom: 0;
+		top: 0px;
+		margin: auto;
+		padding: 2px;
+		border-radius: 50%;
+		text-align: center;
+		color: $color3;
+		font-weight: bold;
+		font-size: 14px;
+		cursor: pointer;
+	}
+}
+.clearinputhide {
+	display: none;
+}
+#grupa {
+	&:not(:valid) {
+		~ {
+			.clearinput {
+				display: none;
+			}
+		}
+	}
+	margin-top: 8%;
+}
+.log {
+	width: 50px;
+	display: inline-block;
+	margin-top: -2%;
+	margin-left: 0;
+	margin-right: 0;
+}
+.titleofForm {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: -12%;
+	margin-bottom: 12%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: -12%;
+	margin-bottom: 12%;
+}
+.boxforUsers {
+	background-color: $bgcolor2;
+	@include boxShadown(inset,5px,5px,5px,$shadownColor1, $whiteColor);
+	border: none;
+	width: 100%;
+	overflow: auto;
+	height: 250px;
+}
+.previewCheckUsers {
+	background-color: $bgcolor2;
+	@include boxShadown(inset,5px,5px,5px,$shadownColor1, $whiteColor);
+	border: none;
+	width: 100%;
+	overflow: auto;
+	padding: 15px;
+	display: flex;
+	flex-wrap: wrap;
+	max-height: 150px;
+	overflow-y: scroll;
+}
+
+.input-box {
+	margin-bottom: 5%;
+}
+.fg {
+	margin-left: 30% !important;
+}
+.btnAdminGroup {
+	width: 100%;
+	height: 38px;
+	border: none;
+	outline: none;
+	margin-top: 20px;
+	border-radius: 20px;
+	background-color: $bgcolor5;
+	font-size: 16px;
+	font-weight: 500;
+	color: $whiteColor;
+	cursor: pointer;
+	@include boxShadown(solid, -5px, -5px, 8px, $shadownColor8, $shadownColor9);
+	transition: 0.8s;
+}
+.btnAdmin {
+	width: 50%;
+	height: 38px;
+	border: none;
+	outline: none;
+	margin-top: 20px;
+	border-radius: 20px;
+	background-color: $bgcolor6;
+	font-size: 16px;
+	font-weight: 500;
+	color: $whiteColor;
+	cursor: pointer;
+	@include boxShadown(solid, -5px, -5px, 8px, $shadownColor8, $shadownColor9);
+	transition: 0.8s;
+	&:hover {
+		background-color: $bgcolor7;
+		color: $whiteColor !important;
+	}
+}
+form {
+	width: 100%;
+}
+.usersinAdminForm {
+	position: relative;
+	left: 40px;
+	top: 3px;
+	font-weight: bold;
+	color: $color4;
+	word-break: break-word;
+}
+.usersDisabled {
+	position: relative;
+	left: 40px;
+	top: 3px;
+	color: $color7;
+	word-break: break-word;
+	cursor: not-allowed;
+}
+input[type="date"] {
+	&::-webkit-datetime-edit {
+		color: $whiteColor;
+		position: relative;
+	}
+	&::-webkit-inner-spin-button {
+		color: $whiteColor;
+		position: relative;
+	}
+	&::-webkit-clear-button {
+		color: $whiteColor;
+		position: relative;
+	}
+	&::-webkit-datetime-edit-year-field {
+		position: absolute !important;
+		padding: 2px;
+		color: $blackColor;
+		left: 55px;
+	}
+	&::-webkit-datetime-edit-month-field {
+		position: absolute !important;
+		padding: 2px;
+		color: $blackColor;
+		left: 26px;
+	}
+	&::-webkit-datetime-edit-day-field {
+		position: absolute !important;
+		color: $blackColor;
+		padding: 2px;
+		left: 4px;
+	}
+}
+.status {
+	margin: 10px;
+	width: 50%;
+}
+.check {
+	margin: 10px;
+	width: 30%;
+}
+.bordertwo {
+	display: flex;
+	margin-top: 10px;
+}
+.btnAdminRemove {
+	width: 50%;
+	height: 38px;
+	border: none;
+	outline: none;
+	margin-top: 20px;
+	border-radius: 20px;
+	background-color: $bgcolor8;
+	font-size: 16px;
+	font-weight: 500;
+	color: $whiteColor;
+	cursor: pointer;
+	@include boxShadown(solid, -5px, -5px, 8px, $shadownColor8, $shadownColor9);
+	transition: 0.8s;
+	&:hover {
+		background-color: $bgcolor9;
+		color: $whiteColor;
+	}
+}
+.userTag {
+	padding: 8px 12px;
+	margin-right: 7px;
+	margin-bottom: 5px;
+	border: 1px solid $bgcolor6;
+	border-radius: 10px;
+}
+.userTagRemove {
+	color: $blackColor;
+	font-weight: 700;
+	cursor: pointer;
+}
+ .containerloader{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boxforUsersplusCss{
+	display: flex;
+}
+

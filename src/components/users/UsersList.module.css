@@ -1,0 +1,8 @@
+.boxforusers{
+    background-color: #ecf0f3;
+    box-shadow: inset 5px 5px 5px #cbced1, inset -5px -5px 5px #fff;
+    border: none;
+    width: 100%;
+    overflow: auto;
+    height: 250px;
+}

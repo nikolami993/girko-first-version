@@ -1,0 +1,71 @@
+.box{
+    display: flex;
+    justify-content: center;
+    margin-left: 300px;
+}
+.container {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+@media only screen and (max-width: 1200px) {
+    .box{
+        margin-left: 0px !important;
+    }
+ }
+
+.boxwidth{
+    margin: auto;
+    box-sizing: border-box;
+    margin-top: 100px;
+    padding: 80px 40px;
+    width:490px;
+    border-radius: 35px;
+    background-color: #ecf0f3;
+    box-shadow: -8px -8px 8px #feffff, 8px 8px 8px #161b1d2f;
+}
+.boxwidth label{
+    font-size: 16px;
+    font-weight: 500;
+    color:#858686;
+}
+
+.boxwidth .input-box-addpost{
+    width:100%;
+    height: 45px;
+    padding-left: 20px;
+    border: none;
+    color: #494a4a;;
+    background-color: #ecf0f3;
+    outline: none;
+   
+    box-shadow: inset 5px 5px 5px #cbced1,
+        inset -5px -5px 5px #ffffff;
+        font-size: large;
+}
+
+
+
+.boxwidth .input-box-txt{
+    width:100%;
+    height: 150px;
+    padding-left: 20px;
+    padding-top: 10px;
+    border: none;
+    color: #494a4a;;
+    background-color: #ecf0f3;
+    outline: none;
+    box-shadow: inset 5px 5px 5px #cbced1,
+        inset -5px -5px 5px #ffffff;
+        font-size: large;
+    max-width: 100%;
+    min-width: 100%;
+    overflow: auto;
+      
+}
+
+
+.boxwidth .input-box-txt .input-box-addpost::placeholder{
+    color:#9ea0a0;
+}

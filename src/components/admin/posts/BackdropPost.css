@@ -1,0 +1,129 @@
+.lightbox {
+    position: fixed;
+    display: flex;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(0 0 0 / 24%);
+    transition: 0.5s all;
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 1;
+    margin-left: 300px;
+  }
+  .hide-lightbox {
+    opacity: 0;
+    pointer-events: none;
+    z-index: -1;
+    display: none;
+  }
+
+  .modalBackgroundSeeMsg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    height: 100%;
+    /* background-color: rgba(200, 200, 200); */
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    width: 100%;
+    z-index: 300;
+    top: 0px;
+}
+.modalContainerSeeMsg{
+    /* width: 500px; */
+    width: 1200px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    /* overflow: auto; */
+    /* max-height: 600px; */
+    max-height: 780px;
+    /* z-index: 4 !important; */
+    /* max-height: 835px; */
+}
+.titleCloseBtnSeeMsg{
+    display: flex;
+    justify-content: flex-end;
+}
+.boxUsersSeeMsg{
+    /* border: 1px solid #15a362; */
+    overflow-y: auto;
+    max-height: 70px; 
+}
+.modaltitleSeeMsg{
+    /* text-align: center; */
+    /* margin-top: 10px; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    overflow-y: auto;
+    /* max-height: 193px; */
+    /* max-height: 550px; */
+}
+
+.modalclosebtnSeeMsg{
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+.labelSeeMsg{
+    font-size: x-large;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.userslabelSeeMsg{
+    font-size: large;
+}
+.rowSeeMsg{
+    display: flex;
+    flex-wrap: wrap;
+    /* margin-right: -15px;
+    margin-left: -15px; */
+    margin-right: 5px;
+    margin-left: 5px;
+}
+@media screen and (max-height: 280px) and (orientation:landscape) {
+    .modalContainerSeeMsg{
+        flex-direction: unset !important;
+    } 
+}
+@media screen and (max-height: 411px) and (orientation: landscape){
+    .modalContainerSeeMsg{
+        padding: 7px;
+    }   
+}
+.datamodalSeeMsg{
+    /* color:#494a4a; */
+    text-align: justify;
+    font-size: large;
+}
+.modalSeeMsg{
+    /* color:#494a4a; */
+    text-align: justify;
+    font-size: larger;
+    max-height: 479px;
+    /* margin-top: 3%; */
+}
+*::-webkit-scrollbar {
+    width: 5px;
+}
+*::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+*::-webkit-scrollbar-thumb {
+    background: #15a362;
+}
+*::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+* {
+    scrollbar-color: #15a362 #f5f6fe !important;
+    scrollbar-width: thin !important;
+}

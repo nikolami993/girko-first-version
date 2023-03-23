@@ -1,0 +1,13 @@
+@mixin desktop($val){
+    @media only screen and (max-width: $val) {
+        @content;
+    }
+}
+@mixin boxShadown($borderStyle,$Hoffset,$Voffset,$BlurSize,$colorshadown1, $colorshadown2){
+    @if $borderStyle == 'inset'{
+        box-shadow: $borderStyle $Hoffset $Voffset $BlurSize $colorshadown1, $borderStyle (-$Hoffset) (-$Voffset) $BlurSize $colorshadown2;
+    }
+    @else {
+        box-shadow: $Hoffset $Voffset $BlurSize $colorshadown1, (-$Hoffset) (-$Voffset) $BlurSize $colorshadown2;
+    } 
+}

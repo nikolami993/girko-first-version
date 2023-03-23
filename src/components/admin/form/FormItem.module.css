@@ -1,0 +1,83 @@
+
+  .forget{
+    margin-top:15px;
+    margin-left: 5%;
+}
+  .forget .checkbox{
+    display:block;
+    position: relative;
+    cursor: pointer;
+    font-size:22px;
+    line-height: 22px;
+}
+.forget .checkbox input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkbox .checkbox-custom{
+    position: absolute;
+    top:3px;
+    left:0px;
+    height: 19px;
+    width:20px;
+    background-color: #ecf0f3;
+    border-radius: 5px;
+    border: none;
+    box-shadow:inset 3px 3px 3px #cbced1, inset -3px -3px 3px #ffff;
+}
+.checkbox input:checked ~ .checkbox-custom{
+    background-color: #ecf0f3;
+    border-radius: 5px;
+    -webkit-transform: rotate(0deg) scale(1);
+    -ms-transform: rotate(0deg) scale(1);
+    transform:rotate(0deg) scale(1);
+    opacity: 1;
+    border:none;
+    box-shadow: -4px -4px 4px #feffff, 4px 4px 4px #161b1d2f;
+}
+.checkbox .checkbox-custom::after{
+    position: absolute;
+    content:"";
+    left:10px;
+    top:10px;
+    height:0px;
+    width:0px;
+    border-radius:5px;
+    border:solid #635f5f;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(0deg) scale(0);
+    -ms-transform: rotate(0deg) scale(0);
+    transform: rotate(0deg) scale(0);
+    opacity:1;
+    transition: all 0.3s ease-out;
+}
+.checkbox input:checked ~ .checkbox-custom::after {
+    -webkit-transform: rotate(45deg) scale(1);
+    -ms-transform: rotate(45deg) scale(1);
+    transform: rotate(45deg) scale(1);
+    opacity:1;
+    left: 7px;
+    top: 3px;
+    width: 4px;
+    height: 8px;
+    border: solid #635f5f;
+    border-width: 0 2px 2px 0;
+    background-color: transparent;
+    border-radius: 0;
+    
+  }
+  .users{
+    position: relative;
+    left: 8%;
+    font-weight: bold;
+    color: #494a4a;
+}
+.faiconsforuser-s{
+    position: relative;
+    left: 10%;
+    font-weight: bold;
+    color: #494a4a;
+    top: 12%; 
+}

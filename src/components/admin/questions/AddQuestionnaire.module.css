@@ -1,0 +1,487 @@
+.contentaddpost{
+    display: flex;
+    justify-content: center;
+    margin-left: 300px;
+}
+.containeraddpost {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.faiconsforuser-s{
+    position: relative;
+    left: 10%;
+    font-weight: bold;
+    color: #494a4a;
+    top: 12%; 
+}
+@media only screen and (max-width: 1200px) {
+    .contentaddpost{
+        margin-left: 0px !important;
+    }
+ }
+ .borderaddQuestionnaire{
+    background-color: #ecf0f3;
+    box-shadow: inset 5px 5px 5px #cbced1, inset -5px -5px 5px #fff;
+    border: none;
+    width: 100%;
+    overflow: auto;
+    height: 250px;
+}
+.boxaddpost{
+    margin: auto;
+    box-sizing: border-box;
+    margin-top: 50px;
+    padding: 40px 40px;
+    width:490px;
+    border-radius: 35px;
+    background-color: #ecf0f3;
+    box-shadow: -8px -8px 8px #feffff, 8px 8px 8px #161b1d2f;
+}
+.boxaddpost label{
+    font-size: 16px;
+    font-weight: 500;
+    color:#858686;
+}
+.titleaddpost{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5%;
+    margin-bottom: 5%;
+}
+.titleaddQuestion{
+    margin-top: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+.boxaddpost .input-box-addpost{
+    width:100%;
+    height: 45px;
+    padding-left: 20px;
+    border: none;
+    color: #494a4a;;
+    background-color: #ecf0f3;
+    outline: none;
+   
+    box-shadow: inset 5px 5px 5px #cbced1,
+        inset -5px -5px 5px #ffffff;
+        font-size: large;
+}
+/* #grupa{
+    margin-top: 8%;
+} */
+.forget{
+    margin-top:15px;
+    margin-left: 5%;
+}
+.searchUsers{
+    width:100%;
+    height: 45px;
+    padding-left: 20px;
+    border: none;
+    color: #494a4a;;
+    background-color: #ecf0f3;
+    outline: none;
+    box-shadow: inset 5px 5px 5px #cbced1,
+        inset -5px -5px 5px #ffffff;
+        font-size: large;
+}
+.boxaddpost .input-box-txt{
+    width:100%;
+    height: 150px;
+    padding-left: 20px;
+    padding-top: 10px;
+    border: none;
+    color: #494a4a;;
+    background-color: #ecf0f3;
+    outline: none;
+    box-shadow: inset 5px 5px 5px #cbced1,
+        inset -5px -5px 5px #ffffff;
+        font-size: large;
+    max-width: 100%;
+    min-width: 100%;
+    overflow: auto;
+      
+}
+.okviraddpost{
+    background-color: #ecf0f3;
+    box-shadow: inset 5px 5px 5px #cbced1, inset -5px -5px 5px #fff;
+    border: none;
+    width: 100%;
+    overflow: auto;
+    height: 250px;
+}
+.input-box-txt{
+    margin-top: 5%;
+}
+
+.boxaddpost .input-box-txt .input-box-addpost::placeholder{
+    color:#9ea0a0;
+}
+
+.btn-addpost{
+    width:100%;
+    height: 38px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background-color: #15a362;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    cursor: pointer;
+    box-shadow: -5px -5px 8px #d8e2e6, 5px 5px 10px #2c313378;
+    transition: 0.8s;
+    margin-top: 5%;
+}
+.btn-addpost:hover{
+    background-color: #15a362;
+    color: white !important;
+}
+form{
+    width: 100%;
+}
+*::-webkit-scrollbar {
+    width: 5px;
+}
+*::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+*::-webkit-scrollbar-thumb {
+    background: #15a362;
+}
+*::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+* {
+    scrollbar-color: #15a362 #f5f6fe !important;
+    scrollbar-width: thin !important;
+}
+.input-box-addpost{
+    font-size: 18px;
+    padding: 5px;
+    height: 35px;
+    width: 350px;
+    border: 1px solid #000;
+    outline: none;
+    border-radius: 5px;
+    color: #000;
+    /*   border-bottom: none; */
+  }
+  /* input {
+    font-size: 18px;
+    padding: 5px;
+    height: 35px;
+    width: 350px;
+    border: 1px solid #000;
+    outline: none;
+    border-radius: 5px;
+    color: #000;
+  }
+  datalist {
+    position: absolute;
+    max-height: 20em;
+    border: 0 none;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  
+  datalist option {
+    font-size: 0.8em;
+    padding: 0.3em 1em;
+    background-color: #ccc;
+    cursor: pointer;
+  }
+  
+  datalist option:hover, datalist option:focus {
+    color: #fff;
+    background-color: #036;
+    outline: 0 none;
+  } */
+  input {
+    font-size: 18px;
+    padding: 5px;
+    height: 35px;
+    width: 350px;
+    border: 1px solid #000;
+    outline: none;
+    border-radius: 5px;
+    color: #000;
+    /*   border-bottom: none; */
+  }
+  
+  datalist {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #000;
+    border-radius: 0 0 5px 5px;
+    border-top: none;
+    width: 350px;
+    padding: 5px;
+  }
+  
+  option {
+    background-color: white;
+    padding: 4px;
+    color: #000;
+    margin-bottom: 1px;
+    font-size: 18px;
+    cursor: pointer;
+    background: #eeeeee
+  }
+  
+  .forget .checkbox-label{
+    display:block;
+    position: relative;
+    cursor: pointer;
+    font-size:22px;
+    line-height: 22px;
+}
+.forget .checkbox-label input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkbox-label .checkbox-custom{
+    position: absolute;
+    top: 3px;
+    left:0px;
+    height: 19px;
+    width:20px;
+    background-color: #ecf0f3;
+    border-radius: 5px;
+    border: none;
+    box-shadow:inset 3px 3px 3px #cbced1, inset -3px -3px 3px #ffff;
+}
+.checkbox-label input:checked ~ .checkbox-custom{
+    background-color: #ecf0f3;
+    border-radius: 5px;
+    -webkit-transform: rotate(0deg) scale(1);
+    -ms-transform: rotate(0deg) scale(1);
+    transform:rotate(0deg) scale(1);
+    opacity: 1;
+    border:none;
+    box-shadow: -4px -4px 4px #feffff, 4px 4px 4px #161b1d2f;
+}
+.checkbox-label .checkbox-custom::after{
+    position: absolute;
+    content:"";
+    left:10px;
+    top:10px;
+    height:0px;
+    width:0px;
+    border-radius:5px;
+    border:solid #635f5f;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(0deg) scale(0);
+    -ms-transform: rotate(0deg) scale(0);
+    transform: rotate(0deg) scale(0);
+    opacity:1;
+    transition: all 0.3s ease-out;
+}
+.checkbox-label input:checked ~ .checkbox-custom::after {
+    -webkit-transform: rotate(45deg) scale(1);
+    -ms-transform: rotate(45deg) scale(1);
+    transform: rotate(45deg) scale(1);
+    opacity:1;
+    left: 7px;
+    top: 3px;
+    width: 4px;
+    height: 8px;
+    border: solid #635f5f;
+    border-width: 0 2px 2px 0;
+    background-color: transparent;
+    border-radius: 0;
+    
+  }
+/*  */
+.forgetradio{
+    margin-top:15px;
+    margin-left: 5%;
+}
+.forgetradio .fg a{
+    text-decoration: none;
+    font-size: 13px;
+    color:#8f8c8c;
+    line-height: 24px;
+}
+.forgetradio .fg{
+    display: inline-block;
+    margin-left: 58%;
+    font-size: 12px;
+}
+.fg{
+    margin-left: 30% !important;
+}
+.forgetradio .fg:hover{
+    text-decoration: underline;
+    text-decoration-color: #b4b8b8;
+}
+.forgetradio .radio-label{
+    display:block;
+    position: relative;
+    cursor: pointer;
+    font-size:16px;
+    line-height: 16px;
+}
+.forgetradio .radio-label input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.radio-label .radio-custom{
+    position: absolute;
+    top:-5px;
+    left:0px;
+    height: 19px;
+    width:20px;
+    background-color: #ecf0f3;
+    border-radius: 30px;
+    border: none;
+    box-shadow:inset 3px 3px 3px #cbced1, inset -3px -3px 3px #ffff;
+}
+.radio-label input:checked ~ .radio-custom{
+    background-color: #ecf0f3;
+    border-radius: 30px;
+    -webkit-transform: rotate(0deg) scale(1);
+    -ms-transform: rotate(0deg) scale(1);
+    transform:rotate(0deg) scale(1);
+    opacity: 1;
+    border:none;
+    box-shadow: -4px -4px 4px #feffff, 4px 4px 4px #161b1d2f;
+}
+.radio-label .radio-custom::after{
+    position: absolute;
+    content:"";
+    left:10px;
+    top:10px;
+    height:0px;
+    width:0px;
+    border-radius:30px;
+    border:solid #635f5f;
+    border-width: 3px 5px 3px 5px;
+    -webkit-transform: rotate(0deg) scale(0);
+    -ms-transform: rotate(0deg) scale(0);
+    transform: rotate(0deg) scale(0);
+    opacity:1;
+    transition: all 0.3s ease-out;
+}
+.radio-label input:checked ~ .radio-custom::after {
+    -webkit-transform: rotate(45deg) scale(1);
+    -ms-transform: rotate(45deg) scale(1);
+    transform: rotate(45deg) scale(1);
+    opacity:1;
+    left: 5px;
+    top: 3px;
+    width: 4px;
+    height: 8px;
+    border: solid #bbb7b7;
+    border-width: 9px 7px 3px 5px;
+    background-color: transparent;
+    border-radius: 30px;
+    
+  }
+
+  .usersAddQuestions{
+    position: relative;
+    left: 8%;
+    font-weight: bold;
+    color: #494a4a;
+}
+
+.disabled{
+    position: relative;
+    left: 8%;
+    opacity: 0.5;
+    pointer-events: none;
+}
+.clearinput {
+    position: absolute;
+	padding: 30px 10px 15px 15px;
+	border:1px solid transparent;
+	background-color: transparent;
+	display: inline-block;
+	vertical-align: middle;
+    outline: 0;
+    cursor: pointer;
+}
+.clearinput:focus{
+    outline: none !important;
+    border: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+.clearinput::after {
+    content: "X";
+    display: block;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    background-color: #C8C8C8;
+    z-index: 1;
+    right: 35px;
+    bottom: 0;
+    top:0px;
+    margin: auto;
+    padding: 2px;
+    border-radius: 50%;
+    text-align: center;
+    color: #484848;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .clearinputhide{
+    display: none;
+  }
+  /* #grupa:not(:valid) ~ .clearinput{
+	display: none;
+} */
+.clear-icon {
+    position: absolute;
+	padding: 30px 10px 15px 15px;
+	border:1px solid transparent;
+	background-color: transparent;
+	display: inline-block;
+	vertical-align: middle;
+    outline: 0;
+    cursor: pointer;
+}
+.clear-icon:focus{
+    outline: none !important;
+    border: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+.clear-icon::after {
+    content: "X";
+    display: block;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    background-color: #C8C8C8;
+    z-index: 1;
+    right: 35px;
+    bottom: 0;
+    top:0px;
+    margin: auto;
+    padding: 2px;
+    border-radius: 50%;
+    text-align: center;
+    color: #484848;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .clear-icon-hide{
+    display: none;
+  }
+  /* #grupa:not(:valid) ~ .clear-icon{
+	display: none;
+} */
+

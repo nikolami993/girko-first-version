@@ -1,0 +1,112 @@
+.modalBackground{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.75); */
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    top:0px;
+}
+.modalContainer{
+    width: 500px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    max-width: -webkit-fill-available;
+    max-width: -moz-available;
+}
+.titleCloseBtn{
+    display: flex;
+    justify-content: flex-end;
+}
+.modaltitle{
+    text-align: center;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modalfooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modalclosebtn{
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+#modalcancelBtn{
+    background-color: #899791;
+    color: white;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    width: 150px;
+    height: 45px;
+    margin: 10px;
+    border: none;
+
+}
+#modalcancelBtn:hover{
+    color: white;
+    background-color: #595d5b;
+}
+.modalyesbtn{
+    width: 150px;
+    height: 45px;
+    margin: 10px;
+    border: none;
+    background-color: #15a362;
+    color: white;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.modalyesbtn:hover{
+    color: white;
+    background-color: #196844;
+}
+.modalmarginbtn{
+    margin-top: 30%;
+}
+.modalrow{
+    display: flex;
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 361px) {
+    .modalyesbtn{
+        width: 115px;
+    }
+    #modalcancelBtn{
+        width: 115px;
+    }
+}
+@media only screen and (max-width: 286px) {
+    .modaltitle{
+        display: block;
+    }
+}
+@media all and (orientation:landscape) {
+    .modalContainer{
+        padding: 0 !important;
+    }
+}
+@media (max-height: 280px){
+    .modalContainer{
+        flex-direction: inherit !important;
+        width: auto !important;
+    }
+}
+@media only screen and (max-width: 281px) {
+    .modaltitle{
+        display: block;
+    }
+}

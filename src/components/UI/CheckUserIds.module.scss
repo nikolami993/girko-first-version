@@ -1,0 +1,28 @@
+
+@import "./../admin/mixins";
+@import "./../admin/Variables.scss";
+
+.previewCheckUsers {
+	background-color: $bgcolor2;
+	@include boxShadown(inset,5px,5px,5px,$shadownColor1, $whiteColor);
+	border: none;
+	width: 100%;
+	overflow: auto;
+	padding: 15px;
+	display: flex;
+	flex-wrap: wrap;
+	max-height: 150px;
+	overflow-y: scroll;
+}
+.userTag {
+	padding: 8px 12px;
+	margin-right: 7px;
+	margin-bottom: 5px;
+	border: 1px solid $bgcolor6;
+	border-radius: 10px;
+}
+.userTagRemove {
+	color: $blackColor;
+	font-weight: 700;
+	cursor: pointer;
+}
